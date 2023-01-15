@@ -17,17 +17,20 @@
     </h1>
 </header>
 
-
 <li>
-<button3 id="navbar" onclick="window.location.href='#C1'">
-Kode
+<button3 id="navbar" onclick="window.location.href='#C1'" style="border-top-left-radius: 7px; border-top-right-radius: 7px">
+Hjemmeside
 </button3>
 <br><br><br>
 <button3 id="navbar" onclick="window.location.href='#C2'">
-Styling
+Kodeforklaring
 </button3>
 <br><br><br>
 <button3 id="navbar" onclick="window.location.href='#C3'">
+Styling
+</button3>
+<br><br><br>
+<button3 id="navbar" onclick="window.location.href='#C4'" style="border-bottom-left-radius: 7px; border-bottom-right-radius: 7px">
 Valg af layout
 </button3>
 </li>
@@ -93,7 +96,7 @@ Her ses koden for min hjemmeside:
 &lt;br&gt;
     
 &lt;p&gt;
-    &lt;img src=&quot;Hector.jpeg&quot; alt=&quot; &quot;
+    &lt;img src=&quot;Hector.jpeg&quot;
     style=&quot;width:1000px;height:700px;&quot;&gt;
 &lt;/p&gt;
     
@@ -105,19 +108,57 @@ Her ses koden for min hjemmeside:
 </pre>
 
 
-<h3 id="C2">Styling</h3>
+<h3 id="C2">Kodeforklaring</h3>
 <p>
-Dette er dog næsten kun det tekniske bag siden. Jeg har nemlig samlet næsten alt der har med layout at gøre i en css-fil, hvor jeg "styler" ikke kun min lille hjemmeside, men også hele min portfolio og alle dens undersider. Efter at have lavet css-filen har jeg blot linket til den, hvor der står link rel="stylesheet" href="HjemmesideStyling.css".
+Jeg vil her forklare, hvordan jeg har sat et billede ind på min hjemmeside. Alt koden for billedet står i en paragraph. Dette har jeg gjort ved at skrive koden mellem &lt;p&gt; og &lt;/p&gt;. Dette gør dog blot at billedet er centreret. I min paragraph har jeg derefter sat billedet ind med &lt;img src="Hector.jpeg" style="width:1000px;height:700px;"&gt;. Med src fortæller jeg hvilket billede jeg vil have sat ind, imens jeg bruger style til at definere længden og bredden billedet skal have.
 </p>
 
 <br>
 <br>
 
-<h3 id="C3">valg af layout</h3>
+<h3 id="C3">Styling</h3>
+<p>
+Dette er dog næsten kun det tekniske bag siden. Jeg har nemlig samlet næsten alt der har med layout at gøre i en css-fil, hvor jeg "styler" ikke kun min lille hjemmeside, men også hele min portfolio og alle dens undersider. Efter at have lavet css-filen har jeg blot linket til den, hvor der står link rel="stylesheet" href="HjemmesideStyling.css". Her ses f.eks. hvordan jeg har stylet knappen:
+</p>
+
+<pre>
+  <code>
+<h2>
+<article>
+button3 {
+  background-color: darkblue;
+  border-color: darkblue;
+  color: white;
+  padding: 20px 32px;
+  font-size: 16px;
+  font-family: verdana;
+  text-align: center;
+  transition-duration: 0.4s;
+  width:10%;
+  cursor:pointer;
+  position:fixed; 
+}
+
+button3:hover{
+  background-color: blue;  
+}
+
+button3:active{
+    cursor:wait;
+    background-color:slateblue;
+}
+</article>
+</h2>
+  </code>
+</pre>
+
+<br>
+<br>
+
+<h3 id="C4">valg af layout</h3>
 <p>
 Jeg har valgt at bruge mange nuancer af farven blå, da det vækker en følelse af tillid, loyalitet, pålidelighed og fred. Derudover er det ikke irriterende at se på som orange f.eks. kunne blive i længden. Generelt kan det nemt blive anstrengende med for meget lys farve der springer lige i øjnene, hvilket også er hvorfor jeg har valgt at gøre baggrunden sort. Farven blå ses desuden også hos andre digitale platforme, der gerne vil virke sikre som f.eks. facebook, mit-ID eller flere netbanker.
 </p>
-
 
  
 </body>
