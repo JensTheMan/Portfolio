@@ -2,10 +2,46 @@ body    {
     background-color:black
     } 
 
-p{text-align: center; color: white;
-font-size:120%; font-family:verdana;
+p{
+    text-align: center;
+    color: white;
+    font-size:120%;
+    font-family:verdana;
+    margin-bottom:auto;
+    margin-top: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    
 }
-h1{text-align:center; color: white;}
+
+h1{
+    text-align:center;
+    color: white;
+    font-family: verdana;
+}
+
+h2{
+    text-align:center;
+    color:black;
+    
+}
+
+h3{
+    text-align:center;
+    color: white;
+    font-family: verdana bold;
+    font-size: 200%;
+    margin-top:auto;
+    margin-bottom: 1%;
+}
+
+article{
+  padding: 20px;
+  width:700px;
+  background-color: white;
+    display:inline-block;
+    text-align: left;
+}
 
 
 header{background-color: darkblue}
@@ -33,11 +69,15 @@ button1:hover{
 
 }
 
+button1:active{
+    cursor:wait;
+    background-color: slateblue;
+    
+}
 
 button2 {
 
    background-color: darkblue;
-
     border-color: darkblue;
   color: white;
   padding: 15px 32px;
@@ -48,7 +88,6 @@ button2 {
     transition-duration: 0.4s;
     width:200px;
     cursor:pointer;
-
     
 
 }
@@ -59,11 +98,49 @@ button2:hover{
 }
 
 button2:active{
-    cursor:wait
+    cursor:wait;
+    background-color:slateblue;
+}
+
+li{
+    float:right;
+    margin-right: 20%;
+    text-align: center;
+    display:block;
 }
     
+button3 {
+  background-color: darkblue;
+    border-color: darkblue;
+  color: white;
+  padding: 20px 32px;
+  font-size: 16px;
+    font-family: verdana;
+    text-align: center;
+    transition-duration: 0.4s;
+    width:10%;
+    cursor:pointer;
+    position:fixed;
+    
+}
 
 
+button3:hover{
+  background-color: blue;  
+}
+
+button3:active{
+    cursor:wait;
+    background-color:slateblue;
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
 
 
 
