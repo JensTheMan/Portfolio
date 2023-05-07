@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"><title>Portfolio Jens</title>
+<link rel="stylesheet" href="HjemmesideStyling.css">
+</head>
+<body>  
+
+<header>  
+<br>
+<h1><u>Portfolio</u></h1>
+
+
+    
+<h4 style="font-size:100%;">
+<div class="dropdown">
+  <span><img src="Menu.png" style="width:20%;height:20%;"></span>
+  <div class="dropdown-content">
+  <button2 type="button" onclick="window.location.href='index.html'">Hjem</button2><button2 type="button" onclick="window.location.href='Webteknologier.html'">Webteknologier</button2><button2 type="button" onclick="window.location.href='IT-sikkerhed.html'">IT-sikkerhed</button2><button2 type="button" onclick="window.location.href='AstroPiPortfoli.html'">AstroPi</button2><button2 type="button" onclick="window.location.href='Spil, leg og samarbejde.html'">Spil, lej og samarbejde</button2><button2 style=background-color:mediumblue type="button" onclick="window.location.href='Databaser og webdesign.html'">Databaser og webdesign</button2>
+  </div>
+</div>
+    </h4>
+</header>
+
+
+    <pre>Databaser og webdesign</pre>
+    
+<p>
+I dette forløb har vi lært om hvordan databaser fungerer, og hvad man kan bruge dem til. Dette kunne f.eks. være en flashcard/quiz-hjemmeside. Derfor har vi i dette forløb udviklet en “Epic Logo Quiz”, hvor vi kombinerer en database med hjemmesideprogrammering.
+</p>
+
+<br>
+<br>
+
+<h3>Problemet</h3>
+
+<p>
+Det kan være svært, demotiverende og kedeligt at læse op til eksamen. Det kan dog gøres nemmere med en quiz-hjemmeside. Dette er den perfekte løsning, da det gør det nemt og sjovt at lære.
+</p>
+
+<br>
+<br>
+
+<h3>Produktet</h3>
+
+<p>
+Vores projekt tager udgangspunkt i en database fra en .csv-fil for at lave en interaktiv quiz om logoer. Vi har forsøgt at lave et brugervenligt design ved at have en simpel overskuelig 
+stil til websitet. Det er vores vurdering, at formålet med websitet er klart så snart man klikker ind på det, da fire valgmuligheder og et logo bliver præsenteret.
+Vi har lavet titlen, knapperne og pilene i HTML, hvor vi herefter har brugt en database i en .csv-fil koblet med Javascript kode, for at tilføje interaktion og funktionalitet på websitet. Herunder kan du spille spillet.
+</p>
+
+<br>
+
+<p style="font-size:100%; font-family:verdana;"><button1 onclick="window.location.href='logo.html'">Spil Epic Logo Quiz</button1></p>
+
+<br>
+<br>
+
+<h3>Kode for Checksvar</h3>
+
+<p>
+Checksvar er den funktion der tjekker om man har trykket på den rigtige svarmulighed, og derefter laver svaret grønt/rødt. Koden til den ses herunder.
+</p>
+  <code>
+<h2>
+<article>
+  function checksvar(svar) {<br>
+    if(svaret==false) {<br>
+      svaret=true;<br>
+      if(svar==rigtigsvar) {<br>
+        rigtigLyd.play();<br>
+        document.getElementById('Svar'+svar).style.setProperty("--svar"+svar+"color","#32e022")<br>
+        document.getElementById('Svar'+svar).style.setProperty("--svar"+svar+"hover","#32e022")<br>
+      }else{<br>
+        forkertLyd.play();<br>
+        document.getElementById('Svar'+svar).style.setProperty("--svar"+svar+"color","#ed2f2f")<br>
+        document.getElementById('Svar'+svar).style.setProperty("--svar"+svar+"hover","#ed2f2f")<br>
+        document.getElementById('Svar'+rigtigsvar).style.setProperty("--svar"+rigtigsvar+"color","#32e022")<br>
+        document.getElementById('Svar'+rigtigsvar).style.setProperty("--svar"+rigtigsvar+"hover","#32e022")<br>
+      }<br>
+    }<br>
+  }<br>
+</article>
+</h2>
+  </code>
+
+<p>
+Det første der står i funktionen er if(svaret==false) {svaret=true;. Dette gør at den ikke fortsætter på funktionen hvis man allerede har svaret. Svaret er en variabel der her ændres fra false til true, hvilket gør at man kun kan svare 1 gang. Herefter ses en if-statement, hvor hvis variablen svar=rigtigsvar, hvilket den kun er hvis man har valgt den rigtige svarmulighed, så spiller en "rigtig"-lyd og farven af knappen skifter til grøn. Der står næsten det samme 2 gange da hover-farven også skal skiftes til grøn. Hvis if-statementet derimod ikke er opfyldt starter "else", hvilket spiller en "forkert"-lyd og svargmuligheden man fejlagtigt valgte skiftes til en rød farve, samtidigt med at den rigtige svarmulighed afsløres med grøn farve.
+</p>
+
+<br>
+<br>
+
+<h3>Flowchart</h3>
+
+<p>
+For at overskueliggøre ens idé til koden, kan man lave et flowchart.Herunder har jeg lavet et flowchart over ovenstående kode.
+</p>
+
+<h1><img src="Flowchart1.png" style="width:60%;"></h1>
+
+
+
+</body>
+</html>
+

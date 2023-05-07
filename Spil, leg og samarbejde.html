@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"><title>Portfolio Jens</title>
+<link rel="stylesheet" href="HjemmesideStyling.css">
+</head>
+<body>  
+
+<header>  
+<br>
+<h1><u>Portfolio</u></h1>
+
+
+    
+<h4 style="font-size:100%;">
+<div class="dropdown">
+  <span><img src="Menu.png" style="width:20%;height:20%;"></span>
+  <div class="dropdown-content">
+  <button2 type="button" onclick="window.location.href='index.html'">Hjem</button2><button2 type="button" onclick="window.location.href='Webteknologier.html'">Webteknologier</button2><button2 type="button" onclick="window.location.href='IT-sikkerhed.html'">IT-sikkerhed</button2><button2 type="button" onclick="window.location.href='AstroPiPortfoli.html'">AstroPi</button2><button2 style=background-color:mediumblue type="button" onclick="window.location.href='Spil, leg og samarbejde.html'">Spil, lej og samarbejde</button2><button2 type="button" onclick="window.location.href='Databaser og webdesign.html'">Databaser og webdesign</button2>
+  </div>
+</div>
+    </h4>
+</header>
+
+
+    <pre>Spil, lej og samarbejde</pre>
+
+
+<li>
+<button3 id="navbar" onclick="window.location.href='#C1'" style="border-top-left-radius: 7px; border-top-right-radius: 7px">
+Problemet
+</button3>
+<br><br><br>
+<button3 id="navbar" onclick="window.location.href='#C2'">
+Produktet
+</button3>
+<br><br><br>
+<button3 id="navbar" onclick="window.location.href='#C3'">
+Kartoflen: et valg bliver truffet
+</button3>
+<br><br><br><br>
+<button3 id="navbar" onclick="window.location.href='#C4'" style="border-bottom-left-radius: 7px; border-bottom-right-radius: 7px">
+Kode for ClickBattle
+</button3>
+<br><br><br><br>
+<button3 id="navbar" onclick="window.location.href='#C5'" style="border-bottom-left-radius: 7px; border-bottom-right-radius: 7px">
+Afsluttende kommentar
+</button3>
+</li>
+
+
+
+<p>I dette forløb har vi lavet vores eget spil med bevægelse indblandet ved hjælp af Makey Makey.</p>
+
+<br>
+<br>
+
+<h3 id="C1">Problemet</h3>
+
+<p>Dansk idrætsforbund er stærkt bekymret over en ny undersøgelse, der viser, at 3 ud af 4 børn og unge bevæger sig for lidt i hverdagen. De mistænker at for meget stillesiddende skærmtid spiller en rolle og vil derfor gerne motivere unge mennesker til at bevæge sig mere og til at være mere sociale, når de spiller computerspil.</p>
+
+<br>
+<br>
+
+<h3 id="C2">Produktet</h3>
+
+<p>Vores produkt kombinerer computerspil med sport ved at lave en hoppe-konkurrence med makey-makey. Meningen er at 2 kartofler skal hænges fra et højt sted, hvorefter hver spiller hopper op og rører kartoflen, og på den måde tager en bid af hver sin pomfrit. Det er så den der spiser sin pomfrit hurtigst der vinder. Hvis du ikke lige har kartoffelopstillingen hjemme i stuen kan man dog bruge piletasterne. Herunder kan du spille spillet.</p>
+<br>
+
+<p style="font-size:100%; font-family:verdana;">
+    <a href="https://editor.p5js.org/Axelltm/full/T5bCkqdPy"><button1>Spil Potato Trials</button1></a></p>
+
+<br>
+<br>
+
+<h3 id="C3">Kartoflen: et valg bliver truffet</h3>
+
+<p>Da vi satte os ned for at finde ud af hvilket slags program vi skulle lave, var vi meget i tvivl og uenige om flere ting. Der foregik en intens brainstorming, men vi havde meget svært ved at få koblet alle målene for produktet sammen. Én ting var vi dog enige om: Vores spil skulle handle om kartoffel. Og på den måde fik vi et udgangspunkt og et solidt grundlag for et spil, og derfra udviklede det sig og resten faldt på plads. Kartoflen er en meget random grøntsag at vælge, hvilket gør det til et sjovt tema, som er noget af det der kan få folk til at prøve spillet. Derudover er kartoflen noget som alle nemt og billigt kan anskaffe sig i stedet for at skulle spare op til en dyr controller. Desuden behøver man ikke bekymre sig om at slå for hårdt på kartoflen, da de nemt kan skiftes ud med nye.</p>
+
+<br>
+<br>
+
+<h3 id="C4">Kode for ClickBattle</h3>
+
+<p>ClickBattle er den funktion der kører spillet med pomfritterne. Koden til den ses herunder.</p>
+
+  <code>
+<h2>
+<article>
+function clickBattle() {<br>
+  background("white");<br>
+  potato.hide();<br>
+  whitebox1.show();<br>
+  whitebox1.size(120,hp1);<br>
+  whitebox2.show();<br>
+  whitebox2.size(120,hp2);<br>
+  pomfrit1.show();<br>
+  pomfrit2.show();<br>
+  textFont("Helvetica", 60);<br>
+  fill("black");<br>
+  text("Player 1",width*0.23,height*0.92)<br>
+  text("Player 2",width*0.63,height*0.92)<br>
+</article>
+</h2>
+  </code>
+
+<p>Før at ClickBattlen kan ske er vi nødt til at fjerne kartoflen og få de 2 pomfritter frem. Dette gør vi med pomfrit1.show();, pomfrit2.show(); og potato.hide();. Derudover sættes baggrunden til hvid, og tekstens farve størrelse og type fastsættes. Teksten "Player 1" og "Player 2" skrives herefter og placeres ud for hver deres pomfrit så man ved hvem der er hvem. Dette gøres f.eks. for Player 1 med text("Player 1",width*0.23,height*0.92). Det sidste der er tilbage i funktionen er vores 2 whitebox. De er som navnet afslører 2 hvide kasser. Vi fandt nemlig ud af at det var langt nemmere at "gemme" pomfritterne bagved en kasse med samme farve som baggrunden end at få dem til gradvist at forsvinde. Når størrelserne af de 2 whitebox fastsættes, sættes længden til henholdsvis hp1 og hp2. Dette er 2 variabler vi har sat til at stige med 25 px hver gang der klikkes på den tilhørende piletast. På den måde bliver whiteboxens længde større i takt med at der trykkes på piletasten (som er koblet til en kartoffel via makey-makey), og dermed bliver pomfritten også mindre.</p>
+
+<br>
+<br>
+
+<h3 id="C5">Afsluttende kommentar</h3>
+
+<p>Forløbet var godt og interessant, og vi endte med at have et velfungerende spil, hvilket også kunne ses på baggrund af brugertestene. Det kunne selvfølgelig have været blevet bedre og pænere hvis vi havde arbejdet videre. Derudover fandt vi ud af at man nemt kunne snyde hvis man bare rørte hvor kablerne sad sammen, men dette fiksede vi undervejs ved at omkapsle dem med tape. Herunder er der en video og nogle billeder af hvordan det endelige produkt fungerede.</p>
+
+<h1><video width="60%" controls>
+  <source src="PotatoVid.MOV" type="video/mp4">
+Your browser does not support the video tag.
+</video></h1>
+
+<h1><img src="Potato1.JPG" style="width:60%;"></h1>
+<h1><img src="Potato2.JPG" style="width:60%;"></h1>
+<h1><img src="Potato3.JPG" style="width:60%;"></h1>
+<h1><img src="Potato4.JPG" style="width:60%;"></h1>
+
+</body>
+</html>
